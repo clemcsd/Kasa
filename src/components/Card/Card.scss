@@ -1,0 +1,58 @@
+.Liste
+{
+    background-color:#F6F6F6 ;
+    position: absolute;
+    width: 1240px;
+    left: 100px;
+    top: 437px;
+    border-radius: 25px;
+}
+
+.Liste_card
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Liste_card_lieux
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Liste_card_image
+{
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.Lien
+{
+    display: flex;
+    align-items: flex-end;
+    width:340px;
+    height:340px;
+    margin: 30px;
+    
+}
+
+.Description
+{
+    position: absolute;
+    color: #FFFFFF;
+    font-weight: 600;
+    width: 17%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10px;
+    opacity: 1;
+    
+    
+}

@@ -1,0 +1,17 @@
+.about_main{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+
+    &_collapse{
+        
+        @media screen and (max-width: 550px){
+            margin: 20px auto;
+        }
+    }
+}
+
