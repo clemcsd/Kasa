@@ -1,9 +1,9 @@
 import Header from '../../components/Header/Header'
 import AboutBanner from '../../components/Aboutbanner/Aboutbanner'
-//import Footer from '../../components/Footer/Footer'
+import Footer from '../../components/Footer/Footer'
 import Collapse from '../../components/Collapse/Collapse'
 //import About from '../../datas/about.json'
-import './about.scss'
+//import './about.scss'
 
 // Page A propos
 
@@ -46,7 +46,7 @@ export default function About() {
 					)}
 				)}
 			</main>
-			
+			<Footer/>
 		</div>
 	)
 }
