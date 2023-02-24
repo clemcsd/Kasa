@@ -14,8 +14,10 @@ function Home() {
   return (
     <div className="Home">
       <Header/>
+      <div class="overflow">
       <HomeBanner/>
       <Card/>
+      </div>
       <Footer/>
     </div>
   )

@@ -2,7 +2,6 @@ footer  {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 40px;
 }
 
 .Basdepage
@@ -15,7 +14,7 @@ footer  {
   justify-content: space-between;
   align-items: center;
   padding-top: 25px;
-  height: 100px;
+  //height: 100px;
 }
 
 .Basdepage_logo
@@ -28,3 +27,8 @@ footer  {
   color: white;
 }
 
+/*@media screen and (max-width: 768px) {
+
+}*/
+
+ 
