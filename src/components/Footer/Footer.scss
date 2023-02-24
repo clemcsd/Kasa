@@ -1,17 +1,23 @@
-$color-primary : #fff;
-@mixin flex($direction: row, $justify: center, $align: center) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-  }
-footer{
-   @include flex(column);
-    gap: 50px;
-    width: 100%;
-    height: 209px;
-    background-color: #000;
-    &_copyright{
-        color: $color-primary;
-    }
+.Basdepage
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  height: 100px;
 }
+
+.Basdepage_logo
+{
+  width: 100px;
+}
+
+.Basdepage_titre
+{
+  color: white;
+}
+

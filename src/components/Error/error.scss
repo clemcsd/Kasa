@@ -26,3 +26,9 @@
     margin-top: 100px;
     text-decoration : underline;
 }
+
+@media screen and (max-width: 768px) {
+    .error404 {
+        font-size: 96px;
+    }
+}

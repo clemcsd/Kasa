@@ -1,16 +1,20 @@
 .Banner
 {
-    position: absolute;
-    width: 1240px;
-    height: 223px;
-    left: 100px;
-    top: 171px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 95%;
     
 }
 
 .Imagepaysage
 {
-    border-radius: 25px;
+    border-radius: 0.8rem;
     filter: brightness(60%);
+    height: 180px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
 }
 

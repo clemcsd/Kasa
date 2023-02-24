@@ -1,4 +1,4 @@
-
+import './Home.scss'
 import Header from '../../components/Header/Header'
 import HomeBanner from '../../components/HomeBanner/HomeBanner'
 import Card from '../../components/Card/Card'
@@ -12,12 +12,11 @@ function Home() {
 
 
   return (
-    <div>
+    <div className="Home">
       <Header/>
       <HomeBanner/>
       <Card/>
       <Footer/>
-
     </div>
   )
 }

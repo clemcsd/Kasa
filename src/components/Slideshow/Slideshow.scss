@@ -1,0 +1,57 @@
+.slider
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.test
+{
+    display: flex;
+}
+
+.vectorGauche
+{
+   
+    
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    border: none;
+    top: 26%;
+    padding: 0 0
+}
+
+.vectorDroite
+{
+    
+    
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    border: none;
+    top: 26%;
+    padding: 0 0;
+    left: 88%;
+    
+}
+
+.slider-image
+{
+    object-fit: cover;
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    background-position-x: center;
+    background-position-y:90%;
+}
+
+.image-number
+{
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 334px;
+}

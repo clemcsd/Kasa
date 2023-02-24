@@ -1,46 +1,57 @@
-import './Slideshow.scss'
-import Vectordroite from '../../assets/Vectordroite.svg'
-import Vectorgauche from '../../assets/Vectorgauche.svg'
-import { useState } from 'react'
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import listeAppartment from "../../datas/logements.json";
+import Vectorgauche from "../../assets/Vectorgauche.png";
+import Vectordroite from "../../assets/Vectordroite.svg";
+import "./Slideshow.scss";
 
-function Slideshow({pictureSlideshow}) {
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const suivPhoto = () => {
-        setCurrentIndex(currentIndex + 1)
-        if(currentIndex === pictureSlideshow.length - 1)
-            setCurrentIndex(0)
-    }
-    const precPhoto = () => {
-        setCurrentIndex(currentIndex - 1)
-        if(currentIndex === 0)
-            setCurrentIndex(pictureSlideshow.length - 1)
-        
-    }
+export default function Caroussel() {
+  const { id } = useParams();
+  const foundItem = listeAppartment.find((object) => object.id === id);
+  const pictures = foundItem.pictures;
 
-    return (
-        <section style={{backgroundImage : `url(${pictureSlideshow[currentIndex]})`}}>
-            {pictureSlideshow.length > 1 &&
-            <>
-                <img
-                    className='vectorright'
-                    src={Vectordroite}
-                    alt="Vectordroite"
-                    onClick={suivPhoto}
-                    
-                />
-                <img
-                    className='vectorleft'
-                    src={Vectorgauche}
-                    alt="Vectorgauche"
-                    onClick={precPhoto}
-                />
-                <p className='slide'>{currentIndex + 1} / {pictureSlideshow.length}</p>
-                </>
-            }
+  const [current, setCurrent] = useState(0);
 
-        </section>
-    )
+  
+  const nextSlide = () => {
+    setCurrent(current === pictures.length - 1 ? 0 : current + 1);
+  };
+
+ 
+  const prevSlide = () => {
+    setCurrent(current === 0 ? pictures.length - 1 : current - 1);
+  };
+
+  return (
+    <div className="slider">
+      {/* Showing slider navigation buttons */}
+      {/* Images */}
+      {pictures.map((img, index) => {
+        return (
+          <div className='image' key={index}>
+            {index === current && (
+              <img
+                src={img}
+                alt="Photos du logement"
+                className="slider-image"
+              />
+            )}
+            {index === current && (
+              <strong className="image-number">
+                {current + 1}/{pictures.length}
+              </strong>
+              
+            )}
+            <button className="vectorGauche">
+              <img src={Vectorgauche} onClick={prevSlide} alt="fleche" />
+            </button>
+            <button className="vectorDroite">
+              <img src={Vectordroite} onClick={nextSlide} alt="fleche" />
+            </button>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
-
-export default Slideshow
 
