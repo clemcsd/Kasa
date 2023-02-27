@@ -1,12 +1,5 @@
-$color-primary : #fff;
-$color-secondary : #FF6060;
-$color-tertiary : #F7F7F7;
-@mixin flex($direction: row, $justify: center, $align: center) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-  }
+@import '../../styles/body.scss';
+
 
 .collapse{
     background-color: $color-tertiary;
@@ -15,7 +8,7 @@ $color-tertiary : #F7F7F7;
     border-bottom-right-radius: 5px;
     margin: 0 auto;
     margin-bottom: 20px;
-    &_title{
+    &_titre{
         @include flex(row, space-between, center);
         background-color: $color-secondary;
         color: $color-primary;
@@ -24,20 +17,20 @@ $color-tertiary : #F7F7F7;
         font-size: clamp(13px, 2vw, 18px);
         padding: 10px 15px;
         cursor: pointer;
-        .arrow{
+        .fleche{
             transition: all 0.2s ease-in-out;
             @media screen and (max-width: 1230px){
                 width: 12px;     
             }
         }
-        .arrow_up{
+        .fleche_up{
             transform: rotate(0deg);
         }
-        .arrow_down{
+        .fleche_down{
             transform: rotate(180deg);
         }
     }
-    &_content{
+    &_contenu{
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -53,14 +46,14 @@ $color-tertiary : #F7F7F7;
                     opacity 0.5s ease-in-out,
                     height 0.2s ease-in-out;
     }
-    &_content_hidden{
+    &_contenu_hidden{
         visibility: hidden;
         opacity: 0;
         height: 0;
     }
 }
 
-.accomodation_collapse{
+.appartment_collapse{
     display: flex;
     justify-content: space-between;
     gap: 70px;

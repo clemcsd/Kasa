@@ -1,57 +1,44 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import listeAppartment from "../../datas/logements.json";
-import Vectorgauche from "../../assets/Vectorgauche.png";
+import { useState } from 'react'
+import Vectorgauche from "../../assets/Vectorgauche.svg";
 import Vectordroite from "../../assets/Vectordroite.svg";
 import "./Slideshow.scss";
 
-export default function Caroussel() {
-  const { id } = useParams();
-  const foundItem = listeAppartment.find((object) => object.id === id);
-  const pictures = foundItem.pictures;
+export default function Slider({imageSlider}) {
 
-  const [current, setCurrent] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-  
-  const nextSlide = () => {
-    setCurrent(current === pictures.length - 1 ? 0 : current + 1);
-  };
+  const slideSuivante = () => {
+      setCurrentIndex(currentIndex + 1)
+      if(currentIndex === imageSlider.length - 1)
+          setCurrentIndex(0)
+  }
 
- 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? pictures.length - 1 : current - 1);
-  };
+  const slidePrecedente = () => {
+      setCurrentIndex(currentIndex - 1)
+      if(currentIndex === 0)
+          setCurrentIndex(imageSlider.length - 1)
+  }
 
   return (
-    <div className="slider">
-      {/* Showing slider navigation buttons */}
-      {/* Images */}
-      {pictures.map((img, index) => {
-        return (
-          <div className='image' key={index}>
-            {index === current && (
-              <img
-                src={img}
-                alt="Photos du logement"
-                className="slider-image"
-              />
-            )}
-            {index === current && (
-              <strong className="image-number">
-                {current + 1}/{pictures.length}
-              </strong>
-              
-            )}
-            <button className="vectorGauche">
-              <img src={Vectorgauche} onClick={prevSlide} alt="fleche" />
-            </button>
-            <button className="vectorDroite">
-              <img src={Vectordroite} onClick={nextSlide} alt="fleche" />
-            </button>
-          </div>
-        );
-      })}
-    </div>
-  );
+      <section style={{backgroundImage : `url(${imageSlider[currentIndex]})`}} className='carousel'>
+          {imageSlider.length > 1 && 
+              <>
+                  <img 
+                      className='carousel_fleche carousel_fleche_droite' 
+                      src={Vectordroite} 
+                      alt="show next slider" 
+                      onClick={slideSuivante}
+                  />
+                  <img 
+                      className='carousel_fleche carousel_fleche_gauche' 
+                      src={Vectorgauche} 
+                      alt="show previous slider" 
+                      onClick={slidePrecedente}
+                  />
+                  <p className='numeroSlide'>{currentIndex + 1} / {imageSlider.length}</p>
+              </>
+          } 
+      </section>
+  )
 }
 
