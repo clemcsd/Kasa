@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Kasa/static/css/main.f9115b01.css",
-    "main.js": "/Kasa/static/js/main.a612bac0.js",
-    "static/media/aboutbanner.png": "/Kasa/static/media/aboutbanner.9b95ada7a30d67f2fb6c.png",
+    "main.css": "/Kasa/static/css/main.9b7e5e4c.css",
+    "main.js": "/Kasa/static/js/main.039ef43c.js",
+    "static/media/aboutbanner.png": "/Kasa/static/media/aboutbanner.abab3f12f4cb82f1dfa1.png",
     "static/media/homebanner.png": "/Kasa/static/media/homebanner.6f8466de99bcc68e61a9.png",
     "static/media/LOGO_orange.svg": "/Kasa/static/media/LOGO_orange.759702e80d2cca5e6d54b41ca6682c02.svg",
     "static/media/LOGO_footer.svg": "/Kasa/static/media/LOGO_footer.ee689fd9409d1b5a898b4247819d8a00.svg",
     "index.html": "/Kasa/index.html",
     "static/media/Vector.svg": "/Kasa/static/media/Vector.b052dd29e3a2bab76700eee79e133c37.svg",
     "static/media/Vectordroite.svg": "/Kasa/static/media/Vectordroite.88153a5d119c2744ffe34dca1ef843df.svg",
-    "main.f9115b01.css.map": "/Kasa/static/css/main.f9115b01.css.map",
-    "main.a612bac0.js.map": "/Kasa/static/js/main.a612bac0.js.map"
+    "static/media/Vectorgauche.svg": "/Kasa/static/media/Vectorgauche.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "main.9b7e5e4c.css.map": "/Kasa/static/css/main.9b7e5e4c.css.map",
+    "main.039ef43c.js.map": "/Kasa/static/js/main.039ef43c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9115b01.css",
-    "static/js/main.a612bac0.js"
+    "static/css/main.9b7e5e4c.css",
+    "static/js/main.039ef43c.js"
   ]
 }
