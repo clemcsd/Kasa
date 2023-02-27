@@ -1,5 +1,5 @@
 import Header from '../../components/Header/Header'
-//import Footer from '../../components/Footer/Footer'
+import Footer from '../../components/Footer/Footer'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import Collapse from '../../components/Collapse/Collapse'
 import Error from '../../components/Error/error'
@@ -55,7 +55,7 @@ export default function Logement() {
 		<Collapse texte={item.description} title="Description" />
 		<Collapse texte={listeEquipements} title="Equipements" />
 		</div>
-		
+		<Footer/>
 	</>
 	);
 }

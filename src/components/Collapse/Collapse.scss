@@ -14,6 +14,7 @@ $color-tertiary : #F7F7F7;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 0 auto;
+    margin-bottom: 20px;
     &_title{
         @include flex(row, space-between, center);
         background-color: $color-secondary;
@@ -44,7 +45,7 @@ $color-tertiary : #F7F7F7;
         visibility: visible;
         opacity: 1;
         height: auto;
-        padding: 10px;
+        padding: 20px;
         letter-spacing: 1px;
         font-size: clamp(12px, 2vw, 16px);
         color: $color-secondary;
