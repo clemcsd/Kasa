@@ -1,5 +1,13 @@
 @import '../../styles/body.scss';
+.All{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    margin: 0;
+}
+
 .appartment{
+    margin-bottom: 100px;
     &_contenu{
         @include flex(row, space-between, flex-start);
         color: $color-secondary;

@@ -30,6 +30,7 @@ export default function Appartment() {
 
 	return (
 		<>
+		<div className="All">
 			<Header/>
 			<Slideshow imageSlider={imageSlider}/>
 			<main className="appartment">
@@ -74,6 +75,7 @@ export default function Appartment() {
 				</div>
 			</main>
 			<Footer/>
+			</div>
 		</>
 	)
 }
