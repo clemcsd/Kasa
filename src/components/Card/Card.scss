@@ -2,31 +2,25 @@
 
 .Liste
 {
-    background-color:#F6F6F6 ;
-    width: 85%;
+    align-items: center;
+    background-color: #f7f7f7;
     border-radius: 25px;
-    margin-left: 108px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin: 0 auto;
     padding: 50px;
+    width: 95%;
+    @media screen and (max-width: 425px){
+        background-color: $color-primary;
+        padding: 5px;
+        margin-left: 10px ;
+        margin-top: 10px;
+    }
 }
 
-.Liste_card
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-
-.Liste_card_lieux
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-}
 
 .Liste_card_image
 {
@@ -35,15 +29,29 @@
     border-radius: 10px;
     object-fit: cover;
     filter: brightness(70%);
+    @media screen and (max-width: 425px){
+        width: 100%;
+    }
 }
 
 .Lien
 {
-    display: flex;
-    align-items: flex-end;
-    width:340px;
-    height:340px;
-    margin-bottom: 30px;
+    position: relative;
+    width: 30%;
+    height: 340px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition : box-shadow 0.2s ease-in-out;
+    @media screen and (max-width: 1230px){
+        width: 47%;   
+    }
+    @media screen and (max-width: 900px){
+        width: 100%;    
+    }
+    @media screen and (max-width: 500px){
+        height: 255px;
+    }
     
     
 }
@@ -53,7 +61,8 @@
     position: absolute;
     color: #FFFFFF;
     font-weight: 600;
-    width: 17%;
+    width: 80%;
+    top: 84%;
     display: flex;
     align-items: flex-end;
     padding-left: 10px;

@@ -4,7 +4,7 @@ import aboutbanner from '../../assets/aboutbanner.png'
 function HomeBanner() {
     return(
         <section className='Banner'>
-            <div>
+            <div className='Banner_image'>
                 <img className='Imagepaysage' src={aboutbanner} alt='banner'/>
             </div>
         </section>

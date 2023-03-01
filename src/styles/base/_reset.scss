@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-body {
+html {
     height: 100%;
     overflow-x: hidden;
 }
@@ -16,4 +16,6 @@ body
     font-family: 'Montserrat';
     background: #FFFFFF;
     color: #FF6060;
+    max-width: 1440px;
+    margin: 0 auto;
 }
