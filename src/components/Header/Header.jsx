@@ -12,14 +12,14 @@ function Header() {
         <header>
             <div className='Header'>
                 <div>
-                    <NavLink ><img className="Logo" src={logo} alt='Logo Kasa' /></NavLink>
+                    <img className="Header_Logo" src={logo} alt='Logo Kasa' />
                 </div>    
                     <div className='Navigation'>
                         
                             {/* isActive permet d'indiquer au visiteur sur quel lien il se trouve (lien actif)*/}
-                            <NavLink className='Accueil' to="/" style={({ isActive }) =>
+                            <NavLink className='Navigation_Accueil' to="/" style={({ isActive }) =>
                                 isActive ? activeStyle : undefined} > Accueil </NavLink>
-                            <NavLink className='APropos' to="/about" style={({ isActive }) =>
+                            <NavLink className='Navigation_APropos' to="/about" style={({ isActive }) =>
                                 isActive ? activeStyle : undefined}> A Propos</NavLink>
                         
                     </div>

@@ -6,24 +6,20 @@
   flex-direction: column;
   align-items: center;
   background-color: black;
-  color: white;
+  color: $color-primary;
   justify-content: space-between;
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  
+  &_logo{
+    width: 100px;
+  }
+  &_titre{
+    color: $color-primary;
+    margin-top: 25px;
+  }
 }
 
-.Basdepage_logo
-{
-  width: 100px;
-}
-
-.Basdepage_titre
-{
-  color: white;
-  margin-top: 25px;
-}
 
 @media screen and (max-width: 700px) {
   .Basdepage_titre{
@@ -34,4 +30,3 @@
   }
 }
 
- 

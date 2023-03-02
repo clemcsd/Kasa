@@ -8,8 +8,8 @@ function Card() {
     
             {listeAppartment.map((appartment, id) => (
                 <div  key={id}>
+                {/*Lien pour rediriger sur la page Appartement*/}   
                 <Link className='Lien'  to={`/logement/${appartment.id}`}>
-                
                 <img className='Liste_card_image' src={appartment.cover} alt='Logements'/>
                 <div className='Description'>
                     <p className='DescriptionTitre'>{appartment.title}</p>
@@ -18,6 +18,7 @@ function Card() {
                 </div>
             )
             )}
+            
     </section> 
     );
 }

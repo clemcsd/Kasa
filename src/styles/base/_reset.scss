@@ -6,7 +6,9 @@
 
 html {
     height: 100%;
+    width: 100%;
     overflow-x: hidden;
+    
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -18,4 +20,6 @@ body
     color: #FF6060;
     max-width: 1440px;
     margin: 0 auto;
+    overflow-x: hidden;
+    
 }

@@ -2,7 +2,7 @@
 
 a {
     list-style-type: none;
-    color: #FF6060;
+    color: $color-secondary;
     text-decoration: none;
 }
 
@@ -14,7 +14,6 @@ a {
     margin: 30px;
     margin-left: 50px;
     width: 100%;
-   
 
 }
 
@@ -25,55 +24,45 @@ a {
     display: flex;
     position: relative;
     right: 10%;
+    &_Accueil{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 142.6%;
+        margin-right: 30px;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        text-decoration-line: underline;
+    }
+    &_APropos{
+        margin-left: 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 142.6%;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        color: $color-secondary;
+    }
 }
 
-.Accueil
-{
-
-
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 142.6%;
-margin-right: 30px;
-
-display: flex;
-align-items: flex-end;
-text-align: right;
-text-decoration-line: underline;
-}
-
-.APropos
-{
-
-margin-left: 30px;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 142.6%;
-/* or 34px */
-
-display: flex;
-align-items: flex-end;
-text-align: right;
-
-color: #FF6060;
-}
 
 @media screen and (max-width: 700px) {
-    .Logo{
+    .Header_Logo{
         width: 145px;
         height: 47px;
     }
     .Header {
         margin-left: 20px;
     }
-    .Accueil{
+    .Navigation_Accueil{
         text-transform: uppercase;
         font-size: 12px;
         margin: 0;
     }
-    .APropos{
+    .Navigation_APropos{
         text-transform: uppercase;
         font-size: 12px;
         margin-left: 10px;

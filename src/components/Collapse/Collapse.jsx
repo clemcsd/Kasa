@@ -1,11 +1,11 @@
 import './Collapse.scss'
 import Chevron from '../../assets/Vector.svg'
-import { useState } from 'react';
+import { useState } from 'react'; 
 
 
 
 export default function Collapse({title, content}) {
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(false); /*Hook d'état pour Collapse*/
 
     return (
         <>

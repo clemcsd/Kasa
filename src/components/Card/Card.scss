@@ -1,15 +1,12 @@
 @import '../../styles/body.scss';
 
 .Liste
-{
-    align-items: center;
+{ 
     background-color: #f7f7f7;
     border-radius: 25px;
-    display: flex;
-    flex-direction: row;
+    @include flex (row, center, center);
     flex-wrap: wrap;
     gap: 50px;
-    justify-content: center;
     margin: 0 auto;
     padding: 50px;
     width: 95%;
